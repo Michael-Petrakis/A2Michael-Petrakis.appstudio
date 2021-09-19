@@ -1,4 +1,4 @@
-
+/*
 //Retrieves the name of user and stores in variable
 let name = prompt("Enter your first name")
 
@@ -31,11 +31,7 @@ else if (temp >= 50 && temp < 70 && state == 'FL') {
   console.log(`${name}, you should ${messages[3]}`)
 }
 
-//If statement that lets the user know they did not enter a valid temperature
-else if (temp >= 70) {
+//If statement that lets the user know they did not enter a valid state or temperature
+else 
   console.log(`${name}, you didn't enter valid inputs`)
-}
-
-//If statement that lets the user know they did not enter a valid state
-else (state != 'NE' || 'FL') 
-  console.log(`${name}, you didn't enter valid inputs`)
+*/
