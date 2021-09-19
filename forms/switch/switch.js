@@ -12,22 +12,30 @@ let temp = prompt("Enter the current outside temperature (In fahrenheit)")
 let messages = ['wear a warm coat, hat, scarf, and gloves', 'wear a warm coat but you won\'t need a hat, scarf, or gloves', 'wear your warmest coat, a warm hat, a scarf, and warm gloves', 'wear a warm coat, hat and gloves. Maybe a scarf too']
 
 
-
+//Switch statement that displays what should be worn based on temperature and state
 switch (true) {
 case temp < 32 && state == 'NE':
-  console.log(`${name}, you should ${messages[0]}`)
+    console.log(`${name}, you should ${messages[0]}`)
     break
+    
+//Switch statement that displays what should be worn based on temperature and state
 case temp >= 32 && temp < 50 && state == 'NE':
     console.log(`${name}, you should ${messages[1]}`)
     break
+    
+//Switch statement that displays what should be worn based on temperature and state
 case temp >= 32 && temp < 50 && state == 'FL':
-   console.log(`${name}, you should ${messages[2]}`)
+    console.log(`${name}, you should ${messages[2]}`)
     break
+    
+//Switch statement that displays what should be worn based on temperature and state
 case temp >= 50 && temp < 70 && state == 'FL':
-  console.log(`${name}, you should ${messages[3]}`)
-  break
+    console.log(`${name}, you should ${messages[3]}`)
+    break
+  
+//Switch statement that lets the user mnow they did not enter a valid state or temperature
 default: 
-  console.log(`${name}, you didn't enter valid inputs`)
-  break
+    console.log(`${name}, you didn't enter valid inputs`)
+    break
 }
 
